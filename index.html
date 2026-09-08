@@ -692,6 +692,36 @@
     return '';
   }
 
+  // Capture UTM parameters on arrival and persist the first touch for
+  // the session, so a visitor who lands with UTMs but submits the form
+  // later (after browsing around) still gets correctly attributed.
+  function getUTMParams(){
+    var fields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+    var params = new URLSearchParams(window.location.search);
+    var current = {};
+    var hasAny = false;
+    fields.forEach(function(f){
+      var v = params.get(f) || '';
+      current[f] = v;
+      if(v) hasAny = true;
+    });
+
+    try {
+      if(hasAny){
+        sessionStorage.setItem('perchd_utm', JSON.stringify(current));
+        return current;
+      }
+      var stored = sessionStorage.getItem('perchd_utm');
+      if(stored) return JSON.parse(stored);
+    } catch(err){
+      console.error('UTM storage unavailable:', err);
+    }
+
+    return current;
+  }
+
+  var utmParams = getUTMParams();
+
   function openModal(plan){
     form.reset();
     planSelect.value = plan || '';
@@ -735,7 +765,12 @@
       company: document.getElementById('fCompany').value,
       position: document.getElementById('fPosition').value,
       linkedin: document.getElementById('fLinkedin').value,
-      plan: planSelect.value
+      plan: planSelect.value,
+      utm_source: utmParams.utm_source,
+      utm_medium: utmParams.utm_medium,
+      utm_campaign: utmParams.utm_campaign,
+      utm_term: utmParams.utm_term,
+      utm_content: utmParams.utm_content
     };
 
     fetch(SHEET_ENDPOINT, {
