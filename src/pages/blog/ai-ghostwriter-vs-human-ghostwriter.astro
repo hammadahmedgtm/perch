@@ -1,0 +1,204 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="AI Ghostwriter vs Human Ghostwriter: What Actually Changes — Perchd"
+  description="The 2026 data on AI vs. human LinkedIn ghostwriting shows the real variable isn't AI. It's whether a human finished the post before it published."
+  ogTitle="AI Ghostwriter vs Human Ghostwriter: What Actually Changes"
+  ogDescription="AI-only LinkedIn posts see up to 45% less engagement, but AI-assisted, human-edited posts outperform fully human writing by up to 31%. Here's what the 2026 data actually shows."
+  ogImage="https://perchd.space/blog-cover-ai-vs-human-ghostwriter.png"
+  canonicalUrl="https://perchd.space/blog/ai-ghostwriter-vs-human-ghostwriter/"
+>
+<style is:global>
+  .article-page { padding: 64px 0 120px; }
+  .article-header { max-width: 760px; margin: 0 auto 56px; }
+  .article-header__tag { font-size: 0.78rem; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); display: inline-block; padding: 4px 12px; border-radius: 999px; margin-bottom: 18px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .article-header h1 { font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; }
+  .article-header__meta { margin-top: 18px; font-size: 0.9rem; color: var(--muted); font-weight: 600; }
+  .article-header__deck { margin-top: 16px; font-size: 1.12rem; color: var(--muted); line-height: 1.65; max-width: 640px; }
+
+  .article-body { max-width: 760px; margin: 0 auto; font-size: 1.05rem; line-height: 1.75; color: var(--ink); }
+  .article-body p { margin: 0 0 1.4em; }
+  .article-body h2 { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 1.75rem); font-weight: 700; letter-spacing: -0.01em; margin: 2.2em 0 0.6em; line-height: 1.25; }
+  .article-body h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; margin: 1.8em 0 0.5em; }
+  .article-body ul { margin: 0 0 1.4em 0; padding-left: 1.4em; }
+  .article-body ul li { margin-bottom: 0.55em; }
+  .article-body strong { font-weight: 700; color: var(--ink); }
+  .article-body a { color: var(--accent-ink); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 2px; }
+  .article-body .callout { background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; padding: 18px 22px; margin: 2em 0; color: var(--accent-ink); font-weight: 600; }
+  .article-body .sources { margin-top: 3em; padding-top: 1.5em; border-top: 1px solid var(--line); font-size: 0.88rem; color: var(--muted); }
+  .article-body .sources p { margin-bottom: 0.4em; }
+
+  .chart-block { margin: 2.2em 0; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 28px 22px; background: var(--bg-alt); }
+  .chart-block__title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .chart-block__sub { font-size: 0.86rem; color: var(--muted); margin-bottom: 18px; }
+  .chart-block svg { width: 100%; height: auto; display: block; }
+  .chart-block__source { margin-top: 14px; font-size: 0.78rem; color: var(--muted); }
+  .chart-legend { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 6px; font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+  .chart-legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .chart-legend i { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+
+  .article-cta { max-width: 760px; margin: 56px auto 0; background: var(--accent); border-radius: var(--radius); padding: 40px 36px; }
+  .article-cta h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--accent-ink); margin-bottom: 10px; }
+  .article-cta p { color: var(--accent-ink); font-size: 1rem; margin-bottom: 22px; opacity: 0.85; }
+  .article-back { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; color: var(--muted); text-decoration: none; margin-bottom: 32px; }
+  .article-back:hover { color: var(--ink); }
+  .article-cover { width: 100%; max-width: 760px; margin: 0 auto 48px; display: block; border-radius: var(--radius); overflow: hidden; }
+  .article-cover img { width: 100%; height: auto; display: block; }
+
+  @media (max-width: 640px) {
+    .article-cta { padding: 28px 22px; }
+    .chart-block { padding: 22px 18px 18px; }
+  }
+</style>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <div class="brand"><a href="/" style="display:flex;align-items:center;gap:9px;text-decoration:none;color:inherit;"><img src="/logo.png" alt="Perchd" width="26" height="26" style="display:block;">Perchd</a></div>
+    <nav class="nav__links">
+      <a class="nav__link" href="/#how">How it works</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/#faq">FAQ</a>
+      <a class="nav__link" href="/blog" style="color:var(--ink);">Blog</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__link" href="#" style="display:inline;">Log in</a>
+      <a class="btn btn--primary btn--sm" href="/#pricing">Start your brief</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <article class="article-page">
+    <div class="wrap">
+      <a class="article-back" href="/blog">← All posts</a>
+
+      <header class="article-header">
+        <span class="article-header__tag">Research</span>
+        <h1>AI Ghostwriter vs Human Ghostwriter: What Actually Changes</h1>
+        <p class="article-header__meta">September 2026 · 7 min read</p>
+        <p class="article-header__deck">Most people frame this as a single choice: use an AI tool to write your LinkedIn content, or pay a human to do it. The 2026 data on how these posts actually perform tells a more specific story, and it's not really about AI versus human at all. It's about finished versus unfinished.</p>
+      </header>
+
+      <div class="article-cover">
+        <img src="/blog-cover-ai-vs-human-ghostwriter.svg" alt="A split illustration of a human head, shown as a neural network, versus an AI head, shown as gears, facing off under a VS badge" width="1200" height="675">
+      </div>
+
+      <div class="article-body">
+        <h2>The case against fully AI-generated content is strong</h2>
+        <p>Start with the bad news for anyone publishing straight out of an AI tool with no real editing pass.</p>
+        <p>Originality.ai analyzed 3,368 long-form posts from 99 influential LinkedIn voices, posted between January and November 2025, and matched AI-classification against engagement. Human-written posts beat likely-AI posts in most categories, and the gap was largest wherever credibility gets checked closely: a <strong>73% engagement advantage</strong> for human writing in marketing and branding, <strong>44%</strong> in healthcare, <strong>40%</strong> in government and public affairs.</p>
+        <p>Separate research from Pangram found AI-generated posts pulling roughly <strong>45% less engagement</strong> than human-authored ones on average. Other algorithm analyses tracking fully AI-generated content with no original perspective put the gap even higher, around <strong>2.8 times less reach</strong> and close to <strong>5 times less engagement</strong> compared to posts with a genuine point of view behind them.</p>
+
+        <div class="chart-block">
+          <p class="chart-block__title">Human writing's engagement edge over AI-only posts, by category</p>
+          <p class="chart-block__sub">Engagement advantage for human-written posts vs. likely-AI posts, 2025 LinkedIn data</p>
+          <svg viewBox="0 0 760 340" role="img" aria-labelledby="divergingChartTitle divergingChartDesc">
+            <title id="divergingChartTitle">Human vs AI engagement advantage by content category</title>
+            <desc id="divergingChartDesc">Human-written posts hold a 73% engagement advantage in marketing and branding, 44% in healthcare, and 40% in government and public affairs. In motivational and leadership content, AI-written posts hold a 75% advantage instead.</desc>
+            <line x1="470" y1="16" x2="470" y2="282" style="stroke:var(--line);stroke-width:1.5" />
+            <text x="470" y="10" font-family="inherit" font-size="11" text-anchor="middle" style="fill:var(--muted)">0%</text>
+
+            <rect x="470" y="30" width="212" height="28" rx="4" style="fill:var(--accent)" />
+            <text x="460" y="49" font-family="inherit" font-size="14" font-weight="600" text-anchor="end" style="fill:var(--ink)">Marketing &amp; branding</text>
+            <text x="690" y="49" font-family="inherit" font-size="14" font-weight="700" text-anchor="start" style="fill:var(--ink)">+73%</text>
+
+            <rect x="470" y="100" width="128" height="28" rx="4" style="fill:var(--accent)" />
+            <text x="460" y="119" font-family="inherit" font-size="14" font-weight="600" text-anchor="end" style="fill:var(--ink)">Healthcare</text>
+            <text x="606" y="119" font-family="inherit" font-size="14" font-weight="700" text-anchor="start" style="fill:var(--ink)">+44%</text>
+
+            <rect x="470" y="170" width="116" height="28" rx="4" style="fill:var(--accent)" />
+            <text x="460" y="189" font-family="inherit" font-size="14" font-weight="600" text-anchor="end" style="fill:var(--ink)">Government &amp; public affairs</text>
+            <text x="594" y="189" font-family="inherit" font-size="14" font-weight="700" text-anchor="start" style="fill:var(--ink)">+40%</text>
+
+            <rect x="252" y="240" width="218" height="28" rx="4" style="fill:var(--ink)" />
+            <text x="460" y="259" font-family="inherit" font-size="14" font-weight="600" text-anchor="end" style="fill:var(--ink)">Motivational &amp; leadership</text>
+            <text x="242" y="259" font-family="inherit" font-size="14" font-weight="700" text-anchor="end" style="fill:var(--ink)">+75%</text>
+          </svg>
+          <div class="chart-legend">
+            <span><i style="background:var(--accent)"></i>Human-written advantage</span>
+            <span><i style="background:var(--ink)"></i>AI-written advantage</span>
+          </div>
+          <p class="chart-block__source">Source: Originality.ai, January 2026 analysis of 3,368 LinkedIn posts from 99 influential voices</p>
+        </div>
+
+        <p>There's one honest exception worth naming rather than burying: in Originality.ai's data, motivational and leadership content actually saw AI-written posts outperform human ones by <strong>75%</strong>. That's not a contradiction, it's a clue. Motivational content was already rewarded for being generic and universally applicable before AI ever showed up. The one category where AI wins is the one category where sounding like everyone else was always the winning move. Everywhere credibility, specificity, or trust matters, human writing wins clearly.</p>
+
+        <h2>The case for AI-assisted content is also strong, which seems like a contradiction until you look closer</h2>
+        <p>Here's the part that trips people up: other large studies show AI-involved content outperforming pure human writing. Buffer analyzed 1.2 million posts and found AI-assisted content earning a median <strong>5.87% engagement rate</strong>, against <strong>4.82%</strong> for fully human-written posts. A separate six-month study across 200 business accounts found AI-assisted content (generated by AI, reviewed and edited by a human before publishing) outperforming purely human-created content by <strong>31%</strong> on engagement.</p>
+
+        <div class="chart-block">
+          <p class="chart-block__title">Median LinkedIn engagement rate</p>
+          <p class="chart-block__sub">AI-assisted (human-edited before publishing) vs. fully human-written posts</p>
+          <svg viewBox="0 0 480 300" role="img" aria-labelledby="barChartTitle barChartDesc">
+            <title id="barChartTitle">Median engagement rate, AI-assisted vs human-only posts</title>
+            <desc id="barChartDesc">AI-assisted posts that a human reviewed and edited before publishing earn a median 5.87% engagement rate, compared to 4.82% for fully human-written posts.</desc>
+            <line x1="60" y1="250" x2="420" y2="250" style="stroke:var(--line);stroke-width:1.5" />
+
+            <rect x="100" y="56" width="90" height="194" rx="4" style="fill:var(--accent)" />
+            <text x="145" y="42" font-family="inherit" font-size="18" font-weight="800" text-anchor="middle" style="fill:var(--ink)">5.87%</text>
+            <text x="145" y="272" font-family="inherit" font-size="14" font-weight="600" text-anchor="middle" style="fill:var(--ink)">AI-assisted</text>
+            <text x="145" y="289" font-family="inherit" font-size="12" text-anchor="middle" style="fill:var(--muted)">(human-edited)</text>
+
+            <rect x="290" y="91" width="90" height="159" rx="4" style="fill:var(--ink)" />
+            <text x="335" y="77" font-family="inherit" font-size="18" font-weight="800" text-anchor="middle" style="fill:var(--ink)">4.82%</text>
+            <text x="335" y="272" font-family="inherit" font-size="14" font-weight="600" text-anchor="middle" style="fill:var(--ink)">Human-only</text>
+          </svg>
+          <p class="chart-block__source">Source: Buffer analysis of 1.2 million social posts</p>
+        </div>
+
+        <p>That's not the same claim as "AI writing beats human writing." Read the methodology closely in both studies, and "AI-assisted" specifically means a human reviewed and edited the draft before it went live. It's a different variable than the fully-automated posts in the Originality.ai and Pangram data.</p>
+        <p>One industry breakdown put the actual mechanism plainly: AI gets a draft to roughly <strong>70% finished</strong>. The human edit supplies the remaining 30%, and that final 30% is what actually determines whether people engage with it.</p>
+
+        <h2>The real variable isn't AI. It's whether a human finished the job</h2>
+        <p>Put both sets of findings side by side and the contradiction disappears. What's actually being measured across all of this research is the same underlying thing: does the post read as though a specific person shaped it, or does it read as something anyone in a similar role could have posted?</p>
+        <p>Raw AI output, published without a real editing pass, fails that test, and both the algorithm and human readers have gotten measurably better at detecting it. LinkedIn's own systems now factor in whether content pattern-matches to AI generation when deciding how far to distribute it, independent of how humans react to it. AI-assisted content that a person meaningfully edited for tone, accuracy, and specificity passes the same test, because by the time it publishes, it isn't really "AI content" anymore. It's a human's finished work that happened to start from a faster first draft.</p>
+        <div class="callout">The founders getting real traction in 2026 share a common trait: they post things only they could know. Proprietary numbers, real failures, decisions that were genuinely hard to make. That's the same pattern our <a href="/blog/2026-state-of-founder-personal-branding">state of founder personal branding research</a> found in the data on what actually drives inbound.</div>
+
+        <h2>What this means for how you actually staff this</h2>
+        <p>Once the real variable is "did a human finish it" rather than "was AI involved at all," a few things follow:</p>
+        <p>If you're publishing AI output with no meaningful edit, expect the reach and engagement penalty documented above. That's not a maybe, it's what the last year of data consistently shows, across multiple independent studies.</p>
+        <p>If you're paying a senior human ghostwriter to handle everything end to end, from figuring out what to say down to writing every sentence, you're paying strategist rates for execution work too. That's a real reason full-service ghostwriting retainers run anywhere from $500 to $8,000 or more a month: you're buying one person's judgment and one person's typing speed at the same hourly rate, whether or not your account actually needs that much strategic thinking in a given week.</p>
+        <p>The version the data actually supports is splitting the two jobs. Let AI handle what it's measurably good at: turning a rough idea into a structured draft, keeping a consistent throughline across a week's worth of posts, doing it fast and repeatably. Keep a human specifically responsible for the finishing pass the data shows is what actually earns engagement: the specific detail, the recognizable voice, the judgment call about what's worth saying at all.</p>
+        <p>That split, not "AI or human," is the actual answer the numbers point to. It's also, not coincidentally, the whole model Perchd is built around: AI handles the strategy and the draft, a real person finishes the words, and you decide how much of that finishing work is yours to do.</p>
+        <p><em>This follows our earlier look at <a href="/blog/2026-state-of-founder-personal-branding">what's actually driving founder visibility in 2026</a> — if that piece was about why a personal brand matters, this one is about how the posts behind it actually get made.</em></p>
+
+        <div class="sources">
+          <p><strong>Sources</strong></p>
+          <p>Originality.ai's January 2026 analysis of 3,368 LinkedIn posts from 99 influential voices, Pangram's LinkedIn AI-content study, Buffer's analysis of 1.2 million social posts, and a six-month, 200-account study comparing AI-assisted and human-only content performance.</p>
+        </div>
+      </div>
+
+      <div class="article-cta">
+        <h3>AI runs the strategy. A real person finishes the words.</h3>
+        <p>Perchd pairs an AI-drafted brief with a human writer who edits it into something only you could have said. You decide how much of that finishing work is yours.</p>
+        <a class="btn btn--dark" href="/#pricing">Start your brief</a>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="brand">Perchd</div>
+        <p>A brand strategist for people who lead. Strategy from AI, sentences from a person, involvement on your terms.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <a href="/#how">How it works</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Plans</h4>
+        <a href="/#pricing">Starter</a>
+        <a href="/#pricing">Pro</a>
+        <a href="/#pricing">Agency</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Perchd. All rights reserved.</div>
+  </div>
+</footer>
+</Layout>

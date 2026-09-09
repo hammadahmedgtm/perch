@@ -32,7 +32,7 @@ import Layout from '../../layouts/Layout.astro';
 
 <header class="site-header">
   <div class="wrap nav">
-    <div class="brand"><a href="/" style="text-decoration:none;color:inherit;">Perchd</a></div>
+    <div class="brand"><a href="/" style="display:flex;align-items:center;gap:9px;text-decoration:none;color:inherit;"><img src="/logo.png" alt="Perchd" width="26" height="26" style="display:block;">Perchd</a></div>
     <nav class="nav__links">
       <a class="nav__link" href="/#how">How it works</a>
       <a class="nav__link" href="/#pricing">Pricing</a>
@@ -55,6 +55,17 @@ import Layout from '../../layouts/Layout.astro';
         <p>Research, data, and perspective on personal branding for founders and executives.</p>
       </div>
       <div class="blog-grid">
+        <a class="blog-card" href="/blog/ai-ghostwriter-vs-human-ghostwriter">
+          <div class="blog-card__img-wrap">
+            <img class="blog-card__cover" src="/blog-cover-ai-vs-human-ghostwriter.svg" alt="AI Ghostwriter vs Human Ghostwriter: What Actually Changes" width="900" height="506">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Research · September 2026</span>
+            <p class="blog-card__title">AI Ghostwriter vs Human Ghostwriter: What Actually Changes</p>
+            <p class="blog-card__excerpt">The 2026 data isn't really about AI versus human. AI-only posts see up to 45% less engagement, but AI-assisted, human-edited posts outperform fully human writing by up to 31%. Here's what actually explains the gap.</p>
+            <span class="blog-card__read">Read the report <span class="blog-card__arrow">→</span></span>
+          </div>
+        </a>
         <a class="blog-card" href="/blog/2026-state-of-founder-personal-branding">
           <div class="blog-card__img-wrap">
             <img class="blog-card__cover" src="/blog-cover-founder-branding.webp" alt="The 2026 State of Founder Personal Branding" width="900" height="506">
