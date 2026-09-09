@@ -1,0 +1,97 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="Blog — Perchd"
+  description="Research, data, and perspective on founder personal branding in 2026."
+  ogTitle="Perchd Blog — What's actually driving founder visibility in 2026"
+  ogDescription="Research, data, and perspective on personal branding for founders and executives."
+  canonicalUrl="https://perchd.space/blog/"
+>
+<style is:global>
+  .blog-page { padding: 80px 0 120px; }
+  .blog-page__head { max-width: 640px; margin-bottom: 56px; }
+  .blog-page__eyebrow { font-size: 0.82rem; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); display: inline-block; padding: 4px 12px; border-radius: 999px; margin-bottom: 16px; }
+  .blog-page__head h1 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 700; letter-spacing: -0.01em; }
+  .blog-page__head p { margin-top: 14px; color: var(--muted); font-size: 1.05rem; }
+  .blog-grid { display: flex; flex-direction: column; gap: 24px; }
+  .blog-card { display: grid; grid-template-columns: 1.1fr 0.9fr; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--bg); text-decoration: none; color: inherit; transition: box-shadow .15s ease, transform .15s ease; }
+  .blog-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+  .blog-card:hover .blog-card__cover { transform: scale(1.03); }
+  .blog-card:hover .blog-card__arrow { transform: translateX(4px); }
+  .blog-card__img-wrap { overflow: hidden; }
+  .blog-card__cover { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+  .blog-card__body { padding: 40px 36px; display: flex; flex-direction: column; justify-content: center; }
+  .blog-card__tag { font-size: 0.78rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 14px; display: block; }
+  .blog-card__title { font-family: var(--font-display); font-size: clamp(1.3rem, 2.2vw, 1.65rem); font-weight: 700; line-height: 1.25; }
+  .blog-card__excerpt { margin-top: 14px; color: var(--muted); font-size: 0.97rem; line-height: 1.65; flex-grow: 1; }
+  .blog-card__read { margin-top: 28px; display: inline-flex; align-items: center; gap: 6px; font-size: 0.95rem; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); padding: 10px 18px; border-radius: 999px; width: fit-content; }
+  .blog-card__arrow { display: inline-block; transition: transform .2s ease; }
+  @media (max-width: 760px) { .blog-card { grid-template-columns: 1fr; } .blog-card__img-wrap { aspect-ratio: 16/9; } .blog-card__body { padding: 26px 22px; } }
+</style>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <div class="brand"><a href="/" style="text-decoration:none;color:inherit;">Perchd</a></div>
+    <nav class="nav__links">
+      <a class="nav__link" href="/#how">How it works</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/#faq">FAQ</a>
+      <a class="nav__link" href="/blog" style="color:var(--ink);">Blog</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__link" href="#" style="display:inline;">Log in</a>
+      <a class="btn btn--primary btn--sm" href="/#pricing">Start your brief</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="blog-page">
+    <div class="wrap">
+      <div class="blog-page__head">
+        <span class="blog-page__eyebrow">Perchd Blog</span>
+        <h1>What's actually driving founder visibility in 2026</h1>
+        <p>Research, data, and perspective on personal branding for founders and executives.</p>
+      </div>
+      <div class="blog-grid">
+        <a class="blog-card" href="/blog/2026-state-of-founder-personal-branding">
+          <div class="blog-card__img-wrap">
+            <img class="blog-card__cover" src="/blog-cover-founder-branding.webp" alt="The 2026 State of Founder Personal Branding" width="900" height="506">
+          </div>
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Research · September 2026</span>
+            <p class="blog-card__title">The 2026 State of Founder Personal Branding</p>
+            <p class="blog-card__excerpt">Personal brand is now measurable as a revenue channel, not a vanity metric. Founders with active profiles generate 3–5× more inbound leads than a company page — and the data behind that shift is now specific enough to act on.</p>
+            <span class="blog-card__read">Read the report <span class="blog-card__arrow">→</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="brand">Perchd</div>
+        <p>A brand strategist for people who lead. Strategy from AI, sentences from a person, involvement on your terms.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <a href="/#how">How it works</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Plans</h4>
+        <a href="/#pricing">Starter</a>
+        <a href="/#pricing">Pro</a>
+        <a href="/#pricing">Agency</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Perchd. All rights reserved.</div>
+  </div>
+</footer>
+</Layout>

@@ -231,3 +231,23 @@
   .modal__success{text-align:center; padding:20px 0;}
   .modal__success h3{margin-bottom:10px;}
   .modal__success p{color:var(--muted); margin-bottom:24px;}
+
+  /* HOME BLOG */
+  .home-blog{padding:20px 0 120px;}
+  .home-blog__head{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:28px;}
+  .home-blog__head h2{font-size:clamp(1.9rem,4vw,2.5rem);}
+  .home-blog__all{font-size:0.94rem; font-weight:700; color:var(--muted); text-decoration:none;}
+  .home-blog__all:hover{color:var(--ink);}
+  .home-blog__featured{display:grid; grid-template-columns:1.1fr 0.9fr; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--bg); text-decoration:none; color:inherit; transition:box-shadow .15s ease, transform .15s ease;}
+  .home-blog__featured:hover{box-shadow:var(--shadow); transform:translateY(-2px);}
+  .home-blog__featured:hover .home-blog__arrow{transform:translateX(4px);}
+  .home-blog__img-wrap{overflow:hidden;}
+  .home-blog__cover{width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s ease;}
+  .home-blog__featured:hover .home-blog__cover{transform:scale(1.03);}
+  .home-blog__card-body{padding:40px 36px; display:flex; flex-direction:column; justify-content:center;}
+  .home-blog__tag{font-size:0.78rem; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.07em; margin-bottom:14px; display:block;}
+  .home-blog__title{font-family:var(--font-display); font-size:clamp(1.3rem,2.2vw,1.65rem); font-weight:700; line-height:1.25;}
+  .home-blog__excerpt{margin-top:14px; color:var(--muted); font-size:0.97rem; line-height:1.65;}
+  .home-blog__read{margin-top:28px; display:inline-flex; align-items:center; gap:6px; font-size:0.95rem; font-weight:700; color:var(--accent-ink); background:var(--accent-soft); padding:10px 18px; border-radius:999px; width:fit-content;}
+  .home-blog__arrow{display:inline-block; transition:transform .2s ease;}
+  @media (max-width:760px){.home-blog__featured{grid-template-columns:1fr;} .home-blog__img-wrap{aspect-ratio:16/9;} .home-blog__card-body{padding:26px 22px;}}

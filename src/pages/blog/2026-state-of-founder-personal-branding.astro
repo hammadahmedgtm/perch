@@ -1,0 +1,154 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+<Layout
+  title="The 2026 State of Founder Personal Branding — Perchd"
+  description="Personal brand is now measurable as a revenue channel. Here's what the numbers actually say, and what's changed about how LinkedIn works in 2026."
+  ogTitle="The 2026 State of Founder Personal Branding"
+  ogDescription="Founders with active profiles generate 3–5× more inbound leads than a company page. Here's what the data says and what's changed about how LinkedIn works in 2026."
+  ogImage="https://perchd.space/blog-cover-founder-branding.webp"
+  canonicalUrl="https://perchd.space/blog/2026-state-of-founder-personal-branding/"
+>
+<style is:global>
+  .article-page { padding: 64px 0 120px; }
+  .article-header { max-width: 760px; margin: 0 auto 56px; }
+  .article-header__tag { font-size: 0.78rem; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); display: inline-block; padding: 4px 12px; border-radius: 999px; margin-bottom: 18px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .article-header h1 { font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; }
+  .article-header__meta { margin-top: 18px; font-size: 0.9rem; color: var(--muted); font-weight: 600; }
+  .article-header__deck { margin-top: 16px; font-size: 1.12rem; color: var(--muted); line-height: 1.65; max-width: 640px; }
+
+  .article-body { max-width: 760px; margin: 0 auto; font-size: 1.05rem; line-height: 1.75; color: var(--ink); }
+  .article-body p { margin: 0 0 1.4em; }
+  .article-body h2 { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 1.75rem); font-weight: 700; letter-spacing: -0.01em; margin: 2.2em 0 0.6em; line-height: 1.25; }
+  .article-body h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; margin: 1.8em 0 0.5em; }
+  .article-body ul { margin: 0 0 1.4em 0; padding-left: 1.4em; }
+  .article-body ul li { margin-bottom: 0.55em; }
+  .article-body strong { font-weight: 700; color: var(--ink); }
+  .article-body .callout { background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; padding: 18px 22px; margin: 2em 0; color: var(--accent-ink); font-weight: 600; }
+  .article-body .sources { margin-top: 3em; padding-top: 1.5em; border-top: 1px solid var(--line); font-size: 0.88rem; color: var(--muted); }
+  .article-body .sources p { margin-bottom: 0.4em; }
+
+  .article-cta { max-width: 760px; margin: 56px auto 0; background: var(--accent); border-radius: var(--radius); padding: 40px 36px; }
+  .article-cta h3 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--accent-ink); margin-bottom: 10px; }
+  .article-cta p { color: var(--accent-ink); font-size: 1rem; margin-bottom: 22px; opacity: 0.85; }
+  .article-back { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; color: var(--muted); text-decoration: none; margin-bottom: 32px; }
+  .article-back:hover { color: var(--ink); }
+  .article-cover { width: 100%; max-width: 760px; margin: 0 auto 48px; display: block; border-radius: var(--radius); overflow: hidden; }
+  .article-cover img { width: 100%; height: auto; display: block; }
+
+  @media (max-width: 640px) {
+    .article-cta { padding: 28px 22px; }
+  }
+</style>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <div class="brand"><a href="/" style="text-decoration:none;color:inherit;">Perchd</a></div>
+    <nav class="nav__links">
+      <a class="nav__link" href="/#how">How it works</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/#faq">FAQ</a>
+      <a class="nav__link" href="/blog" style="color:var(--ink);">Blog</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__link" href="#" style="display:inline;">Log in</a>
+      <a class="btn btn--primary btn--sm" href="/#pricing">Start your brief</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <article class="article-page">
+    <div class="wrap">
+      <a class="article-back" href="/blog">← All posts</a>
+
+      <header class="article-header">
+        <span class="article-header__tag">Research</span>
+        <h1>The 2026 State of Founder Personal Branding</h1>
+        <p class="article-header__meta">September 2026 · 8 min read</p>
+        <p class="article-header__deck">Two years ago, a founder's LinkedIn profile was a nice-to-have. In 2026, it's become one of the highest-leverage channels a company under $50M ARR has access to — and the data behind that shift is now specific enough to act on.</p>
+      </header>
+
+      <div class="article-cover">
+        <img src="/blog-cover-founder-branding.webp" alt="The 2026 State of Founder Personal Branding" width="1200" height="675">
+      </div>
+
+      <div class="article-body">
+        <p>Here's what the numbers actually say, and what's changed about how this channel works.</p>
+
+        <h2>Personal brand is now measurable as a revenue channel, not a vanity metric</h2>
+        <p>The clearest evidence comes from agencies who manage founder accounts at scale and can compare them directly against company-page performance. Windmill Growth, which runs founder LinkedIn strategy for B2B companies, reports that founders with active profiles generate <strong>3 to 5 times more inbound leads</strong> than the same company's official page, and that a founder's individual post typically earns <strong>8 to 12 times the engagement</strong> of identical content posted from the brand account.</p>
+        <p>The downstream effects compound from there. Companies where the CEO posts consistently see <strong>2.3 times higher close rates</strong> on outbound outreach, largely because prospects already have a sense of who they're talking to before the first call happens. The average gap between someone following a founder and booking a call runs <strong>45 to 60 days</strong> — a real but predictable sales cycle rather than the immeasurable "brand awareness" personal branding used to be treated as.</p>
+        <p>Separately, broader platform data shows personal profiles now account for the large majority of content consumption on LinkedIn, while company pages have shrunk to a small fraction of what users actually see in their feeds. Whatever budget used to go toward maintaining a polished company page is, structurally, fighting for attention in a shrinking space.</p>
+
+        <h2>What LinkedIn's algorithm actually rewards now</h2>
+        <p>The mechanics changed enough in 2025 and 2026 that tactics from even 18 months ago actively work against you today. Three shifts matter most:</p>
+        <h3>Dwell time beats reaction counts</h3>
+        <p>The platform now weighs how long someone actually stops to read a post far more heavily than whether they hit like. A post that gets scrolled past in half a second, even if it eventually accumulates likes, is being read by the algorithm as low-value.</p>
+        <h3>Comments carry outsized weight, but only real ones</h3>
+        <p>A meaningful comment — one that reads as an actual reaction to the specific content rather than a generic "Great post!" — counts for roughly <strong>15 times more than a like</strong> in how the algorithm scores a post. LinkedIn has also gotten better at detecting engagement pods and artificially coordinated comments, so this only works if the comments are genuine.</p>
+        <h3>Topical consistency is now a distribution advantage</h3>
+        <p>LinkedIn's recommendation system classifies accounts by the recurring vocabulary and themes in their posts. An executive who posts about three unrelated topics is, functionally, asking the algorithm to categorize them as three different people — each with a smaller and less consistent audience than if they'd stayed on one throughline.</p>
+
+        <h2>The AI content problem cuts both ways</h2>
+        <p>Here's the tension every founder posting in 2026 is operating inside: AI has made content production trivially fast, and that has simultaneously raised the bar for what actually earns attention. Audiences interact with ChatGPT, Perplexity, and Claude daily now, and they've gotten fast at recognizing writing that could have come from any of them. Generic thought leadership — the kind with no specific numbers, no real story, and no risk of disagreement — reads as AI-flavored even when a human wrote it, and gets scrolled past accordingly.</p>
+        <p>The algorithm has started to reinforce this directly rather than leaving it to human judgment alone. Posts that pattern-match to AI-generated text are seeing reduced distribution, which means the content strategy tools were incentivizing two years ago (post often, optimize for volume) is now actively working against reach if the volume comes at the cost of specificity.</p>
+        <div class="callout">The founders getting real traction in 2026 share a common trait: they post things only they could know. Proprietary numbers, real failures, decisions that were genuinely hard to make.</div>
+        <p>That's a harder bar to hit with a content calendar alone, and it's the reason "just use AI to write more posts" has stopped being good advice on its own.</p>
+
+        <h2>AI search is becoming the new front door</h2>
+        <p>The part of this shift that's easiest to miss: LinkedIn content isn't just competing for attention in the LinkedIn feed anymore. A recent visibility study found LinkedIn is now the <strong>second most-cited domain</strong> across ChatGPT Search, Perplexity, and Google's AI Mode — showing up in roughly <strong>11% of all AI-generated answers</strong> on professional topics.</p>
+        <p>For a founder, that means a well-written post or article isn't just reaching whoever happens to scroll past it today. It's a candidate source for what an AI answer engine tells someone six months from now when they ask about your space.</p>
+        <p>Length and structure matter more here than in the main feed. Native LinkedIn articles — the longer-form 500-to-2,000-word format most founders ignore in favor of short posts — account for the majority of LinkedIn content actually cited in AI answers. Precise, consistent terminology matters too: if you want to be known for a specific idea, using different phrasing for it every time you mention it makes it harder for an AI system to recognize you as the consistent source on that topic.</p>
+
+        <h2>What this means in practice</h2>
+        <p>Put together, the data points to a fairly specific playbook — not a vague "be more authentic" mandate:</p>
+        <ul>
+          <li>Post consistently on a narrow, recognizable set of topics rather than broadly.</li>
+          <li>Prioritize specific, provable claims (numbers, decisions, outcomes) over generic advice.</li>
+          <li>Write at least some long-form content, since that's disproportionately what gets cited in AI answers.</li>
+          <li>Treat real engagement (comments worth responding to) as more valuable than raw reach.</li>
+          <li>Expect the "write more AI content faster" strategy to underperform going forward, since both the platform and the audience are getting better at discounting it.</li>
+        </ul>
+        <p>The structural piece worth sitting with: the two things that now matter most — a genuinely specific point of view and content that reads as unmistakably human — are exactly the two things a founder is best positioned to provide and worst positioned to have time for. That gap, between having the raw material for a strong personal brand and having the hours to turn it into consistent, well-structured content, is the actual problem worth solving in 2026, more than any single platform tactic.</p>
+        <p><em>This is the first in an ongoing series looking at what actually drives founder visibility in 2026. If you're trying to close that gap between having something worth saying and having the time to say it well, that's the specific problem Perchd is built around.</em></p>
+
+        <div class="sources">
+          <p><strong>Sources</strong></p>
+          <p>Windmill Growth's 2026 founder branding data; a LinkedIn AI-visibility study covering citation share across ChatGPT Search, Perplexity, and Google AI Mode; platform benchmark data on personal profile versus company page reach from multiple 2026 LinkedIn algorithm analyses.</p>
+        </div>
+      </div>
+
+      <div class="article-cta">
+        <h3>Close the gap between having something worth saying and having time to say it.</h3>
+        <p>Perchd runs the strategy. A real person handles the writing. You choose how involved you want to be.</p>
+        <a class="btn btn--dark" href="/#pricing">Start your brief</a>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="brand">Perchd</div>
+        <p>A brand strategist for people who lead. Strategy from AI, sentences from a person, involvement on your terms.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <a href="/#how">How it works</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Plans</h4>
+        <a href="/#pricing">Starter</a>
+        <a href="/#pricing">Pro</a>
+        <a href="/#pricing">Agency</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Perchd. All rights reserved.</div>
+  </div>
+</footer>
+</Layout>

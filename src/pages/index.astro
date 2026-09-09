@@ -13,6 +13,7 @@ import Layout from '../layouts/Layout.astro';
       <a class="nav__link" href="#how">How it works</a>
       <a class="nav__link" href="#pricing">Pricing</a>
       <a class="nav__link" href="#faq">FAQ</a>
+      <a class="nav__link" href="/blog">Blog</a>
     </nav>
     <div class="nav__actions">
       <a class="nav__link" href="#" style="display:inline;">Log in</a>
@@ -265,26 +266,23 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <section class="examples">
+  <section class="home-blog">
     <div class="wrap">
-      <div class="examples__head">
-        <h2>The kind of clarity this is built to produce</h2>
-        <p>Example brief output. Not real customer quotes, just what a finished positioning statement actually looks like.</p>
+      <div class="home-blog__head">
+        <h2>From the blog</h2>
+        <a class="home-blog__all" href="/blog">All posts →</a>
       </div>
-      <div class="examples__grid">
-        <div class="example-card">
-          <p class="quote">"Most fintech founders lead with security. We lead with the three founders who got scammed before they built this."</p>
-          <p class="who">Example: seed-stage fintech founder</p>
+      <a class="home-blog__featured" href="/blog/2026-state-of-founder-personal-branding">
+        <div class="home-blog__img-wrap">
+          <img class="home-blog__cover" src="/blog-cover-founder-branding.webp" alt="The 2026 State of Founder Personal Branding" width="900" height="506">
         </div>
-        <div class="example-card">
-          <p class="quote">"Everyone says hire fast. We shipped faster with five people than our last company did with fifty, and I can prove it."</p>
-          <p class="who">Example: Series A SaaS founder</p>
+        <div class="home-blog__card-body">
+          <span class="home-blog__tag">Research · September 2026</span>
+          <p class="home-blog__title">The 2026 State of Founder Personal Branding</p>
+          <p class="home-blog__excerpt">Personal brand is now measurable as a revenue channel, not a vanity metric. Founders with active profiles generate 3–5× more inbound leads than a company page — and the data behind that shift is now specific enough to act on.</p>
+          <span class="home-blog__read">Read the report <span class="home-blog__arrow">→</span></span>
         </div>
-        <div class="example-card">
-          <p class="quote">"I'm not the loudest person in healthcare AI. I'm the one who's been in the room when it went wrong."</p>
-          <p class="who">Example: healthcare AI executive</p>
-        </div>
-      </div>
+      </a>
     </div>
   </section>
 
