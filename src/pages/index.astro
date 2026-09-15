@@ -2,6 +2,42 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout>
+<script type="application/ld+json">{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this just ghostwriting with extra steps?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. The strategy layer (positioning, audience, weekly briefs) is the actual product, and it's there on every plan. Who writes the final sentences is what changes as you move up." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will it actually sound like me?",
+      "acceptedAnswer": { "@type": "Answer", "text": "That's the point of keeping a person in the writing loop. On Starter and Pro, you finish the sentences yourself. On Agency, your writer works from your real voice profile and words, not a generic template." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to write anything on the cheaper plans?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On Starter, yes, but from a sharp brief instead of a blank page. On Pro, you're editing an AI-drafted starting point. Agency is the only plan where you don't write at all." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if my strategy needs to change?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Refreshes are built in: quarterly on Starter, more often as you move up, and you can trigger one anytime something changes sooner." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this just for LinkedIn?",
+      "acceptedAnswer": { "@type": "Answer", "text": "LinkedIn is where most founders start, but every plan includes at least one more platform, and the strategy itself isn't platform-specific." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I switch plans later?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, anytime. Most founders start on Starter or Pro and move to Agency once writing it themselves costs more than the price difference." }
+    }
+  ]
+})}</script>
 
 <header class="site-header">
   <div class="wrap nav">
